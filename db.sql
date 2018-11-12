@@ -1,3 +1,11 @@
-DROP DATABASE IF EXISTS friend_db;
+USE friendFinder_db;
 
-CREATE DATABASE friend_db;
+DROP TABLE people;
+
+CREATE TABLE people(
+    person_id INT AUTO_INCREMENT NOT NULL,
+    person_name VARCHAR(50) NOT NULL,
+    photo VARCHAR(50) NOT NULL,
+    scores VARCHAR(50) NOT NULL,
+    PRIMARY KEY(person_id)
+);
