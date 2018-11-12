@@ -1,7 +1,7 @@
 // dependencies
-require('dotenv').config()
+require("dotenv").config();
 const express = require("express");
-
+const path = require("path");
 // intializing app
 const app = express();
 
@@ -10,6 +10,7 @@ const homeRoutes = require("./app/routing/htmlRoutes.js");
 const apiRoutes = require("./app/routing/apiRoutes.js");
 
 // global middleware
+app.use(express.static(path.join(__dirname, "/app/public")));
 app.use("/", homeRoutes);
 app.use("/api", apiRoutes);
 

@@ -1,0 +1,48 @@
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+body{
+    background-color: #dcdfe2;
+    font-family: 'Spicy Rice', cursive;
+}
+
+.navMargin{
+    margin-left: 10px;
+}
+
+.QuestionsMargin{
+    margin-left: 30px;
+}
+
+.inputMargin{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.titleMargin{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 65%; 
+}
+
+button{
+    font-family: 'Spicy Rice', cursive;
+}
+
+.center{
+    color: white;
+    margin-left: auto;
+    margin-top: 200px;
+    padding: 100px;
+}
+
+.homePageImg{
+    background-color: black;
+    background-image: url('../images/liana-young-673947-unsplash.jpg');
+    background-size: cover;
+}
