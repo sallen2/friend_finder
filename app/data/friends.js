@@ -39,6 +39,7 @@ let dbServer = {
   createColumn: (name, url, scores) => {
     return new Promise((resolve, reject) => {
       pool.getConnection((err, con) => {
+        if(err) reject(err)
         con.query(
           `INSERT INTO people SET ?`,
           {
